@@ -126,6 +126,14 @@
       .catch(error => console.error('Error loading footer:', error));
 
 
+      // Load the Menu
+ fetch('./tools/allMenu1.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('allMenu13').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+
 
 // Load the footer
  fetch('./tools/allFooter1.html')
@@ -134,4 +142,5 @@
         document.getElementById('allFooter12').innerHTML = data;
       })
       .catch(error => console.error('Error loading footer:', error));
+
 
