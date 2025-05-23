@@ -117,3 +117,21 @@
     
 })(jQuery);
 
+// Load the Navbar
+ fetch('./tools/allNavbar1.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('allNavbar12').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+
+
+
+// Load the footer
+ fetch('./tools/allFooter1.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('allFooter12').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+
