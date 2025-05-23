@@ -118,16 +118,16 @@
 })(jQuery);
 
 // Load the Navbar
- fetch('./tools/allNavbar1.html')
+ fetch('allNavbar1.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('allNavbar12').innerHTML = data;
+        document.getElementById('allNavbar11').innerHTML = data;
       })
       .catch(error => console.error('Error loading footer:', error));
 
 
       // Load the Menu
- fetch('./tools/allMenu1.html')
+ fetch('allMenu1.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('allMenu13').innerHTML = data;
@@ -136,7 +136,7 @@
 
 
 // Load the footer
- fetch('./tools/allFooter1.html')
+ fetch('allFooter1.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('allFooter12').innerHTML = data;
